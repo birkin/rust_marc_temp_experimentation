@@ -41,7 +41,7 @@ fn main() {
         let mut output = output.lock().unwrap();
         writeln!(&mut output, "\nnew rec...").unwrap();
         for field in rec.field(Tag::from(title_field_tag)).iter() {
-            writeln!(&mut output, "{}", field.get_data::<str>()).unwrap();
+            writeln!(&mut output, "{}", field.get_data::<str>()).unwrap(); // all the writing is likely the most time-consuming part
         }
     });
 }
