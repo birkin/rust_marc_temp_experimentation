@@ -6,6 +6,9 @@
     - played around with rust-marc but was having trouble pulling out specific data.
     - so am now experimenting with how marc_cli calls rust-marc.
 
+- notes...
+    - the combined file is 233MB, and yields 195,190 marc records.
+
 
 
 Resources:
